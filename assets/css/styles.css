@@ -7,7 +7,7 @@
 
     /*========== Colors ==========*/
     /* Change favorite color */
-    --hue-color: 250; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
+    --hue-color: 220; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
 
     /* HSL color mode */
     --first-color: hsl(var(--hue-color), 69%, 61%) ;
@@ -429,6 +429,11 @@ gap: 2rem;
 .about__buttons{
     display: flex;
     justify-content: center;
+    
+}
+
+.resume__btn{
+    margin-left: 10px;
 }
 /*==================== SKILLS ====================*/
 .skills__container{
@@ -959,6 +964,8 @@ transform: translateX(.25rem);
         margin-right: var(--mb-1);
     }
 
+
+
     .nav__container{
         padding-left: 1rem;
     }
@@ -1004,8 +1011,16 @@ transform: translateX(.25rem);
         padding: 0 .5rem;
 
     }
+
+    .contact__information{
+        padding: .5rem;
+       
+    }
+
     .contact__inside{
-        padding-left: 1.5rem;
+        
+      padding-left: 22%;
+    
     }
 
     
@@ -1049,6 +1064,14 @@ transform: translateX(.25rem);
     }
     .nav__toggle{
         margin-right: 10px;
+    }
+    .contact__inside{
+        
+        display: flex;
+      justify-content: center;
+    }
+    .contact__information{
+        padding: 1rem;
     }
     
 }
@@ -1121,8 +1144,187 @@ body{
     .nav__toggle{
         display: none;
     }
-   
+    
+    .home__container{
+        row-gap: 5rem;
+    }
 
+    .home__content{
+        padding-top: 5.5rem;
+        column-gap: 2rem;
+    }
+
+    .home__blob{
+        width: 270px;
+    }
+   .home__scroll{
+       display: block;
+   }
+   .home__scroll-button{
+       margin-left: 3rem;
+   }
+
+   .about__img{
+       width: 350px;
+   }
   
+
+   .about__description{
+       text-align: initial;
+   }
+
+   .about__info{
+    justify-content: space-between;
+   }
+
+   .about__buttons{
+       justify-content: initial;
+   }
+
+   .qualification__tabs{
+       justify-content: center;
+   }
+   .qualification__buttons{
+       margin: 0 var(--mb-1);
+   }
+   .qualification__sections{
+       grid-template-columns: .5fr;
+   }
+
+   .services__container{
+       grid-template-columns: repeat(2, 218px);
+        justify-content: center;
+    }
+
+    .services__icon{
+        font-size: 2rem;
+    }
+
+    .services__content{
+        pad: 6rem 0 2rem 2.5rem;
+    }
+
+    .services__modal-content{
+        width: 450px;
+    }
+
+    .portfolio__img{
+        width: 320px;
+
+    }
+
+    .portfolio__content{
+        align-items: center;
+    }
+    .footer__container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .footer__bg{
+        padding-top: 3rem 0 3.5rem;
+    }
+
+    .footer__socials{
+        justify-self: flex-end;
+    }
+
+    .footer__copy{
+        margin-top: 4.5rem;
+    }
+
+    .home__social{
+        transform: translateX(9rem);
+    }
+    .home__data{
+        transform: translateX(42%);
+    }
+
+    .contact__inside{
+      display: flex;
+      justify-content: center;
+      
+    }
+    .contact__information{
+        padding: 1rem;
+    }
+
+    .about__buttons{
+        transform: translateX(-50px);
+    }
+    
 }
 /* For large devices */
+
+@media screen and (min-width: 1024px){
+    .header,
+    .main,
+    .footer__container{
+        padding: 0;
+    }
+    .home__blob{
+        width: 320px;
+    }
+  
+
+    
+   
+
+    .services__container{
+        grid-template-columns: repeat(2, 238px);
+    }
+
+    .portfolio__content{
+        column-gap: 5rem;
+    }
+
+    .swiper-portfolio-icon{
+        font-size: 2.5rem;
+    }
+
+    .contact__inside{
+        
+        display: flex;
+      justify-content: center;
+    }
+
+    .contact__information{
+        padding: 1rem;
+    }
+
+    .contact__icon{
+        font-size: 2.5rem;
+    }
+    .home__social{
+        padding-right: 25px;
+    }
+
+    .home__data{
+        padding: 10px;
+    }
+    .about__buttons{
+        transform: translateX(-20px);
+    }
+}
+
+
+@media screen and (min-width: 1490px){
+
+    .home__social{
+        transform: translateX(1200%);
+        float: left;
+    }
+
+ .home__data{
+        transform: translateX(60%);
+    }
+
+  .home__img{
+        transform: translateX(-60%);
+    }
+
+  
+ .about__buttons{
+       transform: translateX(-20px);
+   }
+
+}
