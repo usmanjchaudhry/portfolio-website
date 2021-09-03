@@ -1310,7 +1310,7 @@ body{
 @media screen and (min-width: 1490px){
 
     .home__social{
-        transform: translateX(1200%);
+        transform: translateX(1000%);
         float: left;
     }
 
@@ -1326,5 +1326,14 @@ body{
  .about__buttons{
        transform: translateX(-20px);
    }
+
+
+   @media screen and (min-width: 1590px){
+
+    .home__social{
+        transform: translateX(1000%);
+        float: left;
+    }
+
 
 }
