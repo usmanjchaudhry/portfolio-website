@@ -286,6 +286,7 @@ gap: 2rem;
     gap: 1rem;
 }
 
+
 .home__content{
     grid-template-columns: .5fr 3fr;
     padding-top: 3.5rem;
@@ -1069,15 +1070,19 @@ transform: translateX(.25rem);
         order: 1;
         justify-self: center;
     }
+    .about__container{
+        grid-template-columns: repeat(2, 1fr);
+
+
+    }
     
-    .about__container,
     .skills__container,
     .portfolio__content,
     .project__container,
     .contact__container,
     .footer__container
     {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
   
     .qualification__sections{
