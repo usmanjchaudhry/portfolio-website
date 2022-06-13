@@ -648,6 +648,9 @@ overflow: hidden;
 .qualification__buttons.qualification__active{
     color: var(--first-color);
 }
+.experience__box{
+    list-style-type: circle;
+}
 /*==================== SERVICES ====================*/
 .services__container{
     gap: 1.5rem;
@@ -1007,7 +1010,7 @@ transform: translateX(.25rem);
         padding-left: 1rem;
     }
     .nav__logo{
-        margin-left: 10px;
+        margin-left: 0px;
     }
     .nav__toggle{
         margin-right: 10px;
