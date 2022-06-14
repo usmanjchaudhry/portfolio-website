@@ -649,7 +649,12 @@ overflow: hidden;
     color: var(--first-color);
 }
 .experience__box{
-    list-style-type: circle;
+    list-style-type: square;
+}
+.inside_experience_box{
+    list-style-type: square;
+    transform: translateX(20px);
+
 }
 /*==================== SERVICES ====================*/
 .services__container{
